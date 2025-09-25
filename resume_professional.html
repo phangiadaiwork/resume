@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Gia Dai - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #555;
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #000000;
+            margin: 25px 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .section-content {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .institution {
+            font-weight: bold;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .degree {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .education-details {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+
+        .education-details li {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 3px;
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .skills-section {
+            margin-bottom: 25px;
+        }
+
+        .skill-item {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .skill-label {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .project-url {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-url a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .project-description {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+
+        .project-description li {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            list-style: disc;
+            margin-left: 20px;
+            line-height: 1.5;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .divider {
+                background-color: #000 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .education-header,
+            .project-header {
+                flex-direction: column;
+            }
+
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PHAN GIA DAI</h1>
+        <div class="contact-info">
+            Ho Chi Minh City, Vietnam • 0375098759 • phangiadai.work@gmail.com<br>
+            <a href="https://github.com/phangiadaiwork">github.com/phangiadaiwork</a> • <a href="https://linkedin.com/in/dai-phan-1486b6348">linkedin.com/in/dai-phan-1486b6348</a>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">SUMMARY</h2>
+        <div class="section-content">
+            Recent Information Technology graduate with a solid foundation in Java and JavaScript, and exposure to Salesforce through coursework and personal projects. Fast learner with strong problem-solving skills, eager to apply academic knowledge to real-world software development. Seeking an entry-level Backend/Software Engineer role to further develop technical expertise and contribute to impactful projects.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <div class="institution">Ho Chi Minh City University of Education (HCMUE) – Ho Chi Minh City, Vietnam</div>
+                </div>
+                <div class="date">Sep 2023 – Sep 2027</div>
+            </div>
+            <ul class="education-details">
+                <li><strong>Bachelor of Science in Information Technology</strong></li>
+                <li><strong>Certificates:</strong></li>
+                <li><strong>GPA:</strong> 3.4/4.0</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">SKILL</h2>
+        <div class="skills-section">
+            <div class="skill-item">
+                <span class="skill-label">Technical:</span> Java, Salesforce, React
+            </div>
+            <div class="skill-item">
+                <span class="skill-label">Languages:</span> English, Japan
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">EcoViet – Fullstack E-Commerce Platform</div>
+                <div class="date">Sep 2025</div>
+            </div>
+            <div class="project-url">
+                GitHub: <a href="https://github.com/phangiadaiwork/EcoViet">github.com/phangiadaiwork/EcoViet</a>
+            </div>
+            <ul class="project-description">
+                <li>Built backend with NestJS and PostgreSQL, implementing JWT authentication and integrating payment gateways (PayPal, VNPay).</li>
+                <li>Developed frontend using React (SSR), Redux, and Material-UI, ensuring responsive UI and optimized performance.</li>
+                <li>Improved API performance through caching, query optimization, and implemented security measures for data protection.</li>
+                <li>Contributed to core modules for order processing, payment flow, and product management.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
