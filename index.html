@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phan Gia Dai - Resume</title>
+    <title>PHAN GIA DAI - Resume</title>
     <style>
         * {
             margin: 0;
@@ -12,175 +12,152 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.4;
+            font-family: Arial, sans-serif;
+            line-height: 1.3;
             color: #333;
             background-color: #fff;
-            max-width: 800px;
+            max-width: 840px;
             margin: 0 auto;
-            padding: 40px;
+            padding: 28px 26px;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 8px;
         }
 
         .header h1 {
-            font-size: 36px;
+            font-size: 48px;
             font-weight: bold;
             color: #000;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .role {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #222;
         }
 
         .contact-info {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
+            font-size: 20px;
+            color: #444;
+            line-height: 1.35;
+        }
+
+        .contact-links {
+            margin-top: 2px;
         }
 
         .contact-info a {
-            color: #555;
+            color: #444;
             text-decoration: underline;
         }
 
         .divider {
-            height: 2px;
-            background-color: #000000;
-            margin: 25px 0;
+            height: 1px;
+            background-color: #7f7f7f;
+            margin: 10px 0 8px;
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 8px;
         }
 
         .section-title {
-            font-size: 18px;
+            font-size: 31px;
             font-weight: bold;
             color: #000;
             text-transform: uppercase;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
         }
 
-        .section-content {
-            font-size: 14px;
-            line-height: 1.6;
+        .summary-content {
+            font-size: 23px;
+            line-height: 1.32;
             color: #333;
             text-align: justify;
         }
 
-        .education-item {
-            margin-bottom: 20px;
-        }
-
-        .education-header {
+        .item-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 8px;
+            gap: 16px;
+            margin-bottom: 4px;
         }
 
-        .institution {
+        .item-title {
             font-weight: bold;
             color: #000;
-            font-size: 14px;
+            font-size: 24px;
+            line-height: 1.3;
         }
 
         .date {
-            font-size: 14px;
+            font-size: 24px;
             color: #000;
             font-weight: bold;
+            white-space: nowrap;
         }
 
-        .degree {
-            font-size: 14px;
+        .bullets {
+            margin-top: 2px;
+            padding-left: 22px;
+        }
+
+        .bullets li {
+            font-size: 22px;
             color: #333;
-            margin-bottom: 3px;
+            line-height: 1.34;
+            margin-bottom: 2px;
         }
 
-        .location {
-            font-size: 14px;
+        .skills {
+            padding-left: 22px;
+            margin-top: 2px;
+        }
+
+        .skills li {
+            font-size: 23px;
             color: #333;
+            line-height: 1.35;
+            margin-bottom: 2px;
         }
 
-        .education-details {
-            margin-left: 0;
-            margin-top: 8px;
-        }
-
-        .education-details li {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 3px;
-            list-style: disc;
-            margin-left: 20px;
-        }
-
-        .skills-section {
-            margin-bottom: 25px;
-        }
-
-        .skill-item {
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-
-        .skill-label {
+        .label {
             font-weight: bold;
             color: #000;
         }
 
-        .project-item {
-            margin-bottom: 25px;
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 5px;
-        }
-
-        .project-title {
-            font-weight: bold;
-            font-size: 14px;
-            color: #000;
-        }
-
-        .project-url {
-            font-size: 14px;
+        .link-line {
+            font-size: 23px;
             color: #333;
-            margin-bottom: 8px;
+            margin-bottom: 2px;
         }
 
-        .project-url a {
+        .link-line a {
             color: #333;
             text-decoration: underline;
         }
 
-        .project-description {
-            margin-left: 0;
-            margin-top: 8px;
-        }
-
-        .project-description li {
-            font-size: 14px;
+        .role-line {
+            font-size: 23px;
+            font-weight: bold;
             color: #333;
-            margin-bottom: 8px;
-            list-style: disc;
-            margin-left: 20px;
-            line-height: 1.5;
+            margin-bottom: 2px;
         }
 
         @media print {
             body {
-                padding: 20px;
+                padding: 24px;
             }
-            
+
             .divider {
-                background-color: #000 !important;
+                background-color: #7f7f7f !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
@@ -188,20 +165,36 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 20px;
+                padding: 18px 16px;
             }
 
             .header h1 {
-                font-size: 28px;
+                font-size: 34px;
             }
 
-            .education-header,
-            .project-header {
+            .role {
+                font-size: 20px;
+            }
+
+            .contact-info,
+            .section-title,
+            .summary-content,
+            .item-title,
+            .date,
+            .bullets li,
+            .skills li,
+            .role-line,
+            .link-line {
+                font-size: 15px;
+            }
+
+            .item-header {
                 flex-direction: column;
+                gap: 2px;
             }
 
             .date {
-                margin-top: 5px;
+                margin-top: 1px;
             }
         }
     </style>
@@ -209,10 +202,12 @@
 <body>
     <div class="header">
         <h1>PHAN GIA DAI</h1>
-        <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">JAVASCRIPT DEVELOPER</div>
+        <div class="role">FULLSTACK DEVELOPER</div>
         <div class="contact-info">
-            Ho Chi Minh City, Vietnam • 0375098759 • phangiadai.work@gmail.com<br>
-            <a href="https://github.com/phangiadaiwork">github.com/phangiadaiwork</a> • <a href="https://linkedin.com/in/dai-phan-1486b6348">linkedin.com/in/dai-phan-1486b6348</a>
+            Ho Chi Minh City, Vietnam • 0375098759 • phangiadai.work@gmail.com
+            <div class="contact-links">
+                <a href="https://github.com/phangiadaiwork">github.com/phangiadaiwork</a> • <a href="https://linkedin.com/in/dai-phan-1486b6348">linkedin.com/in/dai-phan-1486b6348</a>
+            </div>
         </div>
     </div>
 
@@ -220,8 +215,8 @@
 
     <div class="section">
         <h2 class="section-title">SUMMARY</h2>
-        <div class="section-content">
-            Recent Information Technology graduate with a solid foundation in Java and JavaScript, and exposure to Salesforce through coursework and personal projects. Fast learner with strong problem-solving skills, eager to apply academic knowledge to real-world software development. Seeking an entry-level Backend/Software Engineer role to further develop technical expertise and contribute to impactful projects.
+        <div class="summary-content">
+            Recent Information Technology graduate with a solid foundation in JavaScript and Python, and hands-on experience with Django through coursework and personal projects. Fast learner with strong problem-solving skills, eager to apply academic knowledge to real-world software development. Seeking an entry-level Backend/Software Engineer role to further develop technical expertise and contribute to impactful projects.
         </div>
     </div>
 
@@ -229,17 +224,14 @@
 
     <div class="section">
         <h2 class="section-title">EDUCATION</h2>
-        <div class="education-item">
-            <div class="education-header">
-                <div>
-                    <div class="institution">Ho Chi Minh City University of Education (HCMUE) – Ho Chi Minh City, Vietnam</div>
-                </div>
-                <div class="date">Sep 2023 – Sep 2027</div>
+        <div>
+            <div class="item-header">
+                <div class="item-title">Ho Chi Minh City University of Education (HCMUE) - Ho Chi Minh City, Vietnam</div>
+                <div class="date">Sep 2022 - Sep 2026</div>
             </div>
-            <ul class="education-details">
+            <ul class="bullets">
                 <li><strong>Bachelor of Science in Information Technology</strong></li>
                 <li><strong>GPA:</strong> 3.4/4.0</li>
-                <li><strong>Course load:</strong> 95/122</li>
             </ul>
         </div>
     </div>
@@ -248,16 +240,30 @@
 
     <div class="section">
         <h2 class="section-title">SKILL</h2>
-        <div class="skills-section">
-            <div class="skill-item">
-                <span class="skill-label">Technical:</span> Javascript, Python, Typescript
+        <ul class="skills">
+            <li><span class="label">Technical:</span> Python, Javascript, Typescript</li>
+            <li><span class="label">Framework:</span> Fastapi, Django, React + Vite, Nextjs, Nestjs</li>
+            <li><span class="label">Languages:</span> English</li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2 class="section-title">EXPERIENCE</h2>
+        <div>
+            <div class="item-header">
+                <div class="item-title"><u>Digital transformation of agriculture (ETECHS Company)</u></div>
+                <div class="date">Dec 2025 - March 2026</div>
             </div>
-            <div class="skill-item">
-                <span class="skill-label">Framework:</span> React + Vite, NextJs, NestJs, FastApi
-            </div>
-            <div class="skill-item">
-                <span class="skill-label">Languages:</span> English
-            </div>
+            <div class="role-line">Role in the project:</div>
+            <ul class="bullets">
+                <li>Built real-time messaging systems (WebSocket) with end-to-end encryption (E2EE) using Python.</li>
+                <li>Worked with Neo4j: graph modeling (Node/Relationship), Cypher queries, traversals, recommendation queries, indexing/constraints, and batch processing (UNWIND), integrated into backend APIs.</li>
+                <li>Developed AI chatbot (Gemini API) for order-taking, syncing product and customer data from Sapo, and implemented SSO authentication.</li>
+                <li>Containerized applications using Docker and Docker Compose, with understanding of basic DevOps workflows.</li>
+                <li>Familiar with React for frontend integration.</li>
+            </ul>
         </div>
     </div>
 
@@ -265,34 +271,16 @@
 
     <div class="section">
         <h2 class="section-title">PROJECTS</h2>
-        <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">EcoViet – Fullstack E-Commerce Platform</div>
-                <div class="date">Sep 2025</div>
-            </div>
-            <div class="project-url">
-                GitHub: <a href="https://github.com/phangiadaiwork/EcoViet">github.com/phangiadaiwork/EcoViet</a>
-            </div>
-            <ul class="project-description">
-                <li>Built backend with NestJS and PostgreSQL, implementing JWT authentication and integrating payment gateways (PayPal, VNPay).</li>
-                <li>Developed frontend using React (SSR), Redux, and Material-UI, ensuring responsive UI and optimized performance.</li>
-                <li>Improved API performance through caching, query optimization, and implemented security measures for data protection.</li>
-                <li>Contributed to core modules for order processing, payment flow, and product management.</li>
-            </ul>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-header">
-                <div class="project-title">DoctorCare – Healthcare Management System</div>
+        <div>
+            <div class="item-header">
+                <div class="item-title"><u>DoctorCare - Healthcare Management System</u></div>
                 <div class="date">Dec 2025</div>
             </div>
-            <div class="project-url">
-                GitHub: <a href="https://github.com/fidai/doctorcare">github.com/fidai/doctorcare</a>
-            </div>
-            <ul class="project-description">
+            <div class="link-line"><span class="label">GitHub:</span> <a href="https://github.com/fidai/doctorcare">github.com/fidai/doctorcare</a></div>
+            <ul class="bullets">
                 <li>Built full-stack healthcare platform with FastAPI and React TypeScript, implementing JWT authentication and RBAC for multiple user roles.</li>
-                <li>Developed RESTful APIs with auto-generated documentation for management ORM for doctors, patients, clinics, and appointment scheduling with optimized queries.</li>
-                <li>Implemented responsive UI with Redux and Material-UI, and protected routing for secure role-based access control.</li>
+                <li>Developed RESTful APIs with SQLAlchemy ORM for doctors, patients, clinics, and appointment scheduling with optimized queries.</li>
+                <li>Implemented responsive UI with Redux Toolkit, Material-UI, and protected routing for secure role-based access control.</li>
             </ul>
         </div>
     </div>
